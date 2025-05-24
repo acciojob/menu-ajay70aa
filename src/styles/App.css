@@ -1,12 +1,97 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-button{
-    color: #27aedb;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+}
+#main h1 {
+    margin-bottom: 30px;
+}
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.buttons-container button {
+    background-color: transparent;
+    color: #c49c5e;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+.buttons-container button:hover {
+    border-bottom: 4px solid #c49c5e;
+}
+.menu-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+.menu-container::after {
+    content: '';
+    flex: content;
+}
+.menu-item-container {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item-container img {
+    border: 5px solid #c49c5e;
+    border-radius: 6px;
+    width: 40%;
+    height: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 8px 20px;
+    height: 100%;
+    width: 60%;
+}
+.item-details p {
+    line-height: 24px;
+}
+.item-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(123, 123, 123, 0.2);
+}
+.item-heading p {
+    color: #c49c5e;
+}
+.item-heading h3 {
+    text-transform: capitalize;
+    padding-bottom: 5px;
 }
